@@ -1,0 +1,35 @@
+################################################################################
+                                     README
+################################################################################
+
+rna_distmap is just the simplest possible script to plot a distance matrix.
+for now the distance matrix is computed using octave but it will eventually
+get ported to full python code if it turns out to be more efficient.
+
+h2. Version
+
+This is version 0.1 created on December 7, 2011 while postducking at Kar. Inst.
+in tze Zveeden.
+
+h2. Setup
+
+1. Clone the repository
+
+ @git clone https://github.com/esguerra/rna_distmap.git@
+
+h2. Usage
+
+To run the program just call it from the prompt:
+
+ @bash-4.0$ ./rna_distmap.py@
+
+It will make a pretty picture if you have python, matplotlib, and numpy
+installed in your linux-box.
+
+Thank you so much!
+
+
+
+################################################################################
+################################################################################
+
