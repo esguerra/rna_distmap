@@ -26,7 +26,10 @@ inp = genfromtxt("Pmat.dat")
 M = inp
 
 #Compute the distance matrix
-D = dista.cdist(M,M)
+#Thanks to scipy's distance function is easy to play around
+#with other metrics
+D = dista.cdist(M,M, metric='minkowski', p=2)
+#D = dista.cdist(M,M)
 
 #This is a trick to get a lower diagonal displayed alone.
 mask =  triu(D)               # the upper diagonal is masked
@@ -41,7 +44,7 @@ plt.xlabel('Residue Number')
 plt.ylabel('Residue Number')
 cmap = cm.get_cmap('gist_heat',10)
 cmap.set_bad('w')
-plt.imshow(D, vmin=0, vmax=25, origin='upper',
+plt.imshow(D, vmin=0, vmax=30, origin='upper',
 	cmap=cmap, aspect='equal', interpolation='nearest')           
 plt.colorbar()
 plt.grid(True)
