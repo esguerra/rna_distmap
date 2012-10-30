@@ -3,12 +3,12 @@
 ################################################################################
 
 rna_distmap is just the simplest possible script to plot a distance matrix.
-for now the distance matrix is computed using octave but it will eventually
-get ported to full python code if it turns out to be more efficient.
+It uses scipy's spatial.distance function to compute the distance matrix
+of all atom-to-atom distances.
 
 h2. Version
 
-This is version 0.1 created on December 7, 2011 while postducking at Kar. Inst.
+This is version 0.2 created on October 30, 2012 while postducking at Kar. Inst.
 in tze Zveeden.
 
 h2. Setup
@@ -23,10 +23,8 @@ To run the program just call it from the prompt:
 
  @bash-4.0$ ./rna_distmap.py@
 
-It will make a pretty picture if you have python, matplotlib, and numpy
-installed in your linux-box.
-
-Thank you so much!
+It will make a picture just like the one in Yathindra and Malathi's 1982 paper
+for the crystal structure of phenylalanine tRNA at 1.93 Angstrom resolution.
 
 
 
