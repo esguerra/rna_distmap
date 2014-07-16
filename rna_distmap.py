@@ -93,13 +93,13 @@ plt.suptitle('Interatomic Phosphorus Distance Matrix', fontsize=18)
 plt.title('%s.pdb'%(pdbname))
 plt.xlabel('Residue Number')
 plt.ylabel('Residue Number')
-#cmap = cm.get_cmap('gist_heat',16)
+cmap = cm.get_cmap('gist_heat',10)
 #cmap = cm.get_cmap('Reds_r',20)
-cmap = cm.get_cmap('Blues_r',16)
+#cmap = cm.get_cmap('Blues_r',16)
 #cmap = my_cmap
-cmap.set_bad('w')
-plt.imshow(D, vmin=4, vmax=28, origin='upper', 
-	cmap=cmap, aspect='equal', interpolation='nearest')           
+#cmap.set_bad('w')
+plt.imshow(D, vmin=0.2, vmax=30, origin='upper',
+    cmap=cmap, aspect='equal', interpolation='nearest')
 plt.colorbar()
 plt.grid(True)
 #If you want to get a png figure uncomment the next line.

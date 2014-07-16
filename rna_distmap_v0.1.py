@@ -40,6 +40,6 @@ plt.imshow(M, vmin=0, vmax=20, origin=0,
 plt.colorbar()
 plt.grid(True)
 #If you want to get a png figure uncomment the next line.
-#savefig("confmat.png", dpi=200, format="png")
+savefig("confmat.png", dpi=200, format="png")
 plt.show()
 
