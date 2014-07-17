@@ -1,4 +1,5 @@
-                                     README
+
+README
 ================================================================================
 
 rna_distmap is just the simplest possible script to plot a distance matrix.
@@ -29,5 +30,5 @@ To run the program just call it from the prompt:
 It will make a picture just like the one in Yathindra and Malathi's 1982 paper
 for the crystal structure of phenylalanine tRNA at 1.93 Angstrom resolution.
 
-================================================================================
+
 
