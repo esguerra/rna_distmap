@@ -11,18 +11,18 @@
 ## interatomic distance plots such as the one in Figure 2
 ## of Malathi and Yathindra, Biochemical Journal, 1982,
 ## 205, 457-460.
-## http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1158502/?page=3 
+## http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1158502/?page=3
 ##
 ################################################################################
 import os, sys
 if len(sys.argv) != 2:
-        print '===================================='    
+        print '===================================='
         print 'Usage: rna_distmap.py <pdbid>'
-        print '===================================='    
+        print '===================================='
         print 'Notice that the pdb extension is'
         print 'not needed to invoke the map maker.'
-        print '===================================='            
-        sys.exit(1) 
+        print '===================================='
+        sys.exit(1)
 
 
 from numpy import *
@@ -36,7 +36,7 @@ from pylab import *
 #A file called Pmat.dat is created to contains P atom coordinates
 pdbname=sys.argv[1]
 os.system("awk '{if (substr($0,1,6) ~ /ATOM/ && substr($0,14,1) ~ /P/) \
-          print substr($0,32,23) }' %s.pdb > Pmat.dat" % (pdbname)) 
+          print substr($0,32,23) }' %s.pdb > Pmat.dat" % (pdbname))
 inp = genfromtxt("Pmat.dat")
 
 #Arrange the data in an array
@@ -46,7 +46,7 @@ inp = genfromtxt("Pmat.dat")
 #    for i in line.split():
 #        cart_arr[-1].append(float(i))
 
-#inp.close()        
+#inp.close()
 
 #M = array(cart_arr)
 M = inp
@@ -105,5 +105,3 @@ plt.grid(True)
 #If you want to get a png figure uncomment the next line.
 plt.savefig('%s_dmap.png'%(pdbname), dpi=200, format="png")
 #plt.show()
-
-
