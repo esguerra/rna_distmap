@@ -16,7 +16,7 @@ in tze Zveeden.
 1. Clone the repository
 
 ```git
- @git clone https://github.com/esguerra/rna_distmap.git@
+git clone https://github.com/esguerra/rna_distmap.git
 ```
 
 ## Usage
@@ -24,11 +24,14 @@ in tze Zveeden.
 To run the program just call it from the prompt:
 
 ```bash
- @bash-4.0$ ./rna_distmap.py@
+./rna_distmap.py 1ehz
 ```
 
-It will make a picture just like the one in Yathindra and Malathi's 1982 paper
-for the crystal structure of phenylalanine tRNA at 1.93 Angstrom resolution.
+It will make a picture just like the one in Yathindra and Malathi's
+1982 paper [1] for the crystal structure of phenylalanine tRNA at 1.93
+Angstrom resolution.  
 
+[1] R. Malathi and N. Yathindra, Secondary and tertiary structural
+foldings in tRNA, Biochemistry Journal, **1982**, *205*, 457-460  
 
 
